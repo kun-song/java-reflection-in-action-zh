@@ -10,8 +10,12 @@ public static void setObjectColor(Object obj, Color color) {
 		Method method = cls.getMethod("setColor", new Class[]{ Color.class });
 
 		method.invoke(obj, new Object[]{ color });
-	} catch () {
-
+	} catch (NoSuchMethodException e) {
+		...
+	} catch (IllegalAccessException e) {
+		...
+	} catch (InvocationTargetException e) {
+		...
 	}
 }
 ```
@@ -44,5 +48,11 @@ method.invoke(obj, new Object[] { color });
 
 如果参数 `obj` 的类型不支持 `setColor` 方法，将抛出 `NoSuchMethodException` 异常。使用内省的代码都要处理此类异常。虽然团队保证所有组件都支持 `setColor` 方法，但是如果 `obj` 的类型不支持，则传入的是非法参数，需要处理。
 
+`setObjectColor` 方法可能没有访问非 `public` 的 `setColor` 方法的权限，并且在动态调用时，`setColor` 本身可能会抛出异常：
 
+* 包裹 `setObjectColor` 的类没有访问 `private` / `protected` / `package` 的 `setColor` 的权限。
+* `setColor` 本身抛出的异常。
 
+对于上面的 `NoSuchMethodException` `IllegalAccessException` `InvocationTargetException` 等异常，动态调用时都要捕获并处理。例子中将这些异常简单的包装成一个运行时异常重新抛出，在生产代码中，需要团队统一制定异常。
+
+例子中的运行时处理会比强制类型转换（cast）和静态调用耗费更长时间，如果方法的信息（声明方法的类 + 方法签名）在编译时可知，则无需动态调用。动态调动需要运行时查找被调用的方法、检查调用方法的访问权限，这都会引入延时。第九章将介绍性能分析技术，评估反射带来的性能妥协与灵活性之间的平衡。
