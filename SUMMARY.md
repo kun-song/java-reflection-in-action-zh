@@ -8,7 +8,7 @@
         * [1.2.2 实现反射方案](chapter1/programming_a_reflective_solution.md)
     * [1.3 检查运行时的程序](chapter1/examming_running_programs.md)
     * [1.4 在运行时查询方法](chapter1/finding_a_method_at_runtime.md)
-    * [1.5 通过类对象表示类型](chapter1/representing_types_with_class_objects.md)
+    * [1.5 使用 `Class` 对象表示类型](chapter1/representing_types_with_class_objects.md)
     * [1.6 理解方法对象](chapter1/understanding_method_objects.md)
 * [第二章 通过反射读取属性](contents/chapter2.md)
 * [第三章 动态加载与反射构造](contents/chapter3.md)
