@@ -31,7 +31,7 @@
     * [2.3 理解 Filed 对象](chapter2/2.3_understanding_fields_objects.md)
     * [2.4 获取、设置字段值](chapter2/2.4_getting_and_setting_field_values.md)
     * [2.5 检查限定符](chapter2/2.5_examining_modifiers.md)
-        * [2.5.1 介绍成员](chapter2/2.5.1_introducing_member.md)
+        * [2.5.1 Member 接口](chapter2/2.5.1_introducing_member.md)
         * [2.5.2 接口自省的陷阱](chapter2/2.5.2_interface_introspection_pitfall.md)
         * [2.5.3 对实例变量进行自省](chapter2/2.5.3_introspecting_for_instance_variables.md)
     * [2.6 访问非公有成员](chapter2/2.6_accessing_nonpublic_members.md)
