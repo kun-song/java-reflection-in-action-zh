@@ -38,7 +38,7 @@
     * [2.7 处理数组](chapter2/2.7_working_with_arrays.md)
     * [2.8 序列化：完整版](chapter2/2.8_serialization_putting_it_all_together.md)
         * [2.8.1 序列化所有组件](chapter2/2.8.1_serializing_each_component.md)
-        * [2.8.2 序列化实例变量](chapter2/2.8.1_serializing_instance_variables.md)
+        * [2.8.2 序列化实例变量](chapter2/2.8.2_serializing_instance_variables.md)
     * [2.9 使用反射序列化](chapter2/2.9_using_reflective_serialization.md)
     * [2.10 总结](chapter2/2.10_summary.md)
 * [第三章 动态加载与反射构造](contents/chapter3.md)
