@@ -43,7 +43,7 @@
     * [2.10 总结](chapter2/2.10_summary.md)
 * [第三章 动态加载与反射构造](contents/chapter3.md)
     * [3.1 George 的部署难题](chapter3/3.1_georges_deployment_problem.md)
-        * [3.1.1 根据模式进行设计](chapter3/3.1.1_designing_with_patterns.md)
+        * [3.1.1 使用设计模式进行设计](chapter3/3.1.1_designing_with_patterns.md)
         * [3.1.2 实现反射解决方案](chapter3/3.1.2_programming_a_reflective_solution.md)
         * [3.1.3 通过反射增强工厂方法](chapter3/3.1.3_enhancing_the_factory_method_with_reflection.md)
         * [3.1.4 结合代理与反射的优势](chapter3/3.1.4_combining_benefits_of_delegation_and_reflection.md)
@@ -76,4 +76,3 @@
 * [第八章 设计模式](contents/chapter8.md)
 * [第九章 评估性能](contents/chapter9.md)
 * [第十章 反射未来展望](contents/chapter10.md)
-
