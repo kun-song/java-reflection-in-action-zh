@@ -46,7 +46,7 @@
         * [3.1.1 使用设计模式进行设计](chapter3/3.1.1_designing_with_patterns.md)
         * [3.1.2 实现反射解决方案](chapter3/3.1.2_programming_a_reflective_solution.md)
         * [3.1.3 通过反射增强工厂方法](chapter3/3.1.3_enhancing_the_factory_method_with_reflection.md)
-        * [3.1.4 结合代理与反射的优势](chapter3/3.1.4_combining_benefits_of_delegation_and_reflection.md)
+        * [3.1.4 结合委托与反射的优势](chapter3/3.1.4_combining_benefits_of_delegation_and_reflection.md)
     * [3.2 动态加载类](chapter3/3.2_loading_classes_dynamically.md)
         * [3.2.1 forName 基础](chapter3/3.2.1_basics_of_forName.md)
         * [3.2.2 获取数组类](chapter3/3.2.2_getting_array_classes.md)
